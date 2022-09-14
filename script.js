@@ -147,7 +147,7 @@ document.getElementById('blog-section').addEventListener('click', function () {
     question.style = 'display: none'
   }
 
-  const questions = document.getElementsByClassName("accordion");
+  const questions = document.getElementsByClassName("question");
 
   for (let i = 0; i < questions.length; i++) {
     questions[i].addEventListener("click", function () {
