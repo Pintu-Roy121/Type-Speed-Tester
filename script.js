@@ -137,3 +137,27 @@ setInterval(() => {
 
   document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
 }, 1000);
+
+let num = 0;
+document.getElementById('blog-section').addEventListener('click', function () {
+  num++;
+  const question = document.getElementById('questions-section');
+  question.style = 'display: block';
+  if (num % 2 === 0) {
+    question.style = 'display: none'
+  }
+
+  const questions = document.getElementsByClassName("accordion");
+
+  for (let i = 0; i < questions.length; i++) {
+    questions[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+})
