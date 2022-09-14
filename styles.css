@@ -82,10 +82,7 @@ body {
   margin: 10px 0;
 }
 
-#blog-section {
-  text-align: center;
-  margin: 10px 0;
-}
+
 
 
 .green {
@@ -203,6 +200,11 @@ button {
 
 /* -----------------Question Section is Here--------------------------
 ---------------------------------------------------------------------- */
+.blog-btn {
+  text-align: center;
+  margin: 10px 0;
+}
+
 .questions {
   margin: 25px auto;
   width: 70%;

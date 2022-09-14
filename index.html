@@ -15,60 +15,57 @@
 <body>
   <h1 class="title"><img src="./logo.png" /></h1>
   <div id="show-time">0 seconds</div>
-  <div id="blog-section">
-    <button class="btn">Blog</button>
+  <div class="blog-btn">
+    <button id="blog-section" class="btn">Blog</button>
   </div>
   <div id="questions-section" class="questions">
-    <div>
-      <h2 class="heading">Questions</h2>
-      <hr>
+    <h2 class="heading">Questions</h2>
+    <hr>
+    <button class="question">Difference between local storage and session storage.</button>
+    <div class="panel">
+      <p> <strong>sessionStorage</strong> is similar to <strong>localStorage</strong> : the difference is that while
+        data in <strong>localStorage doesn't expire</strong>, data in <strong>sessionStorage is cleared</strong> when
+        the page session ends. Whenever a
+        document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that
+        particular tab.That page session is valid only for that particular tab.A page session lasts as long as the tab
+        or the browser is open, and survives over page reloads and restores. </p>
+    </div>
 
-      <button class="question">Difference between local storage and session storage.</button>
-      <div class="panel">
-        <p> <strong>sessionStorage</strong> is similar to <strong>localStorage</strong> : the difference is that while
-          data in <strong>localStorage doesn't expire</strong>, data in <strong>sessionStorage is cleared</strong> when
-          the page session ends. Whenever a
-          document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that
-          particular tab.That page session is valid only for that particular tab.A page session lasts as long as the tab
-          or the browser is open, and survives over page reloads and restores. </p>
-      </div>
+    <button class="question">Difference between local scope and block scope.</button>
+    <div class="panel">
+      <p>When a variable is <strong>globally scoped</strong>, it means it is <strong>available from anywhere in your
+          program</strong>.
+        Declaring a variable outside a function or a block outside a function leads to it being globally scoped. <br>
+        <strong>A block scoped</strong> variable means that the variable defined within a <strong>block will not be
+          accessible from
+          outside the block</strong>. A block can reside inside a function, and a block scoped variable will not be
+        available outside the block even if the block is inside a function.
+      </p>
+    </div>
 
-      <button class="question">Difference between local scope and block scope.</button>
-      <div class="panel">
-        <p>When a variable is <strong>globally scoped</strong>, it means it is <strong>available from anywhere in your
-            program</strong>.
-          Declaring a variable outside a function or a block outside a function leads to it being globally scoped. <br>
-          <strong>A block scoped</strong> variable means that the variable defined within a <strong>block will not be
-            accessible from
-            outside the block</strong>. A block can reside inside a function, and a block scoped variable will not be
-          available outside the block even if the block is inside a function.
-        </p>
-      </div>
+    <button class="question">How event loop works in javascript?</button>
+    <div class="panel">
+      <p>The event loop is <strong>a process that waits for the Call Stack to be clear before pushing callbacks from
+          the Task Queue to the Call Stack. </strong> Once the Stack is clear, the event loop triggers and checks the
+        Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack
+        to be clear again, and repeats the same process. The above diagram demonstrates the basic workflow between the
+        Event Loop and the Task Queue.
+      </p>
+    </div>
 
-      <button class="question">How event loop works in javascript?</button>
-      <div class="panel">
-        <p>The event loop is <strong>a process that waits for the Call Stack to be clear before pushing callbacks from
-            the Task Queue to the Call Stack. </strong> Once the Stack is clear, the event loop triggers and checks the
-          Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack
-          to be clear again, and repeats the same process. The above diagram demonstrates the basic workflow between the
-          Event Loop and the Task Queue.
-        </p>
-      </div>
-
-      <button class="question">How many way to get undefined ?</button>
-      <div class="panel">
-        <p>
-        <h5>8 ways to get undefined:</h5>
-        1. Variable that is not initialized will give Unddefined. <br>
-        2. Function with no return. <br>
-        3. Parameter that is not passed will be undefined. <br>
-        4. If return has nothing on the right side will return undefined. <br>
-        5. Property that doesn't exists on the object will give undefined. <br>
-        6. Accessing array elements outside of the index range. <br>
-        7. Deleting an element inside an array. <br>
-        8. Set a value directly to undefined. <br>
-        </p>
-      </div>
+    <button class="question">How many way to get undefined ?</button>
+    <div class="panel">
+      <p>
+      <h5>8 ways to get undefined:</h5>
+      1. Variable that is not initialized will give Unddefined. <br>
+      2. Function with no return. <br>
+      3. Parameter that is not passed will be undefined. <br>
+      4. If return has nothing on the right side will return undefined. <br>
+      5. Property that doesn't exists on the object will give undefined. <br>
+      6. Accessing array elements outside of the index range. <br>
+      7. Deleting an element inside an array. <br>
+      8. Set a value directly to undefined. <br>
+      </p>
     </div>
   </div>
 
