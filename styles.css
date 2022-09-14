@@ -196,9 +196,18 @@ button {
   .card {
     flex-direction: column;
   }
+
+  #result {
+    transform: translate(10%, 10%);
+  }
+
+  #question {
+    height: auto;
+    padding: 5px 20px;
+  }
 }
 
-/* -----------------Question Section is Here--------------------------
+/* -----------------Question Section Styles is Here--------------------------
 ---------------------------------------------------------------------- */
 .blog-btn {
   text-align: center;
@@ -219,6 +228,7 @@ button {
 }
 
 .question {
+  height: auto;
   margin: 25px auto;
   background-color: #eee;
   color: rgb(5, 5, 5);
